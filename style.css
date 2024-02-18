@@ -1,0 +1,156 @@
+/* === COLORS === */
+/* === FONTS === */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "League Spartan", sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  padding: 75px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 85%;
+  margin: auto;
+}
+header .intro-info {
+  text-align: center;
+  margin-bottom: 35px;
+  max-width: 315px;
+}
+header .intro-info h1 {
+  font-size: 40px;
+  color: hsl(300, 43%, 22%);
+  margin-bottom: 20px;
+}
+header .intro-info p {
+  color: hsl(303, 10%, 53%);
+}
+header .rating-wrapper {
+  text-align: center;
+  width: 315px;
+  padding: 15px 0 15px 0;
+  background-color: hsl(300, 24%, 96%);
+  border-radius: 10px;
+  color: hsl(300, 43%, 22%);
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+@media only screen and (min-width: 1440px) {
+  header .rating-wrapper {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 25px;
+    padding-left: 25px;
+    width: 400px;
+  }
+  header .rating-wrapper p {
+    margin-top: 0;
+  }
+}
+header .rating-wrapper p {
+  margin-top: 10px;
+  font-size: 15px;
+}
+
+.review-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 85%;
+  margin: 35px auto 0 auto;
+}
+
+.review-wrapper {
+  width: 315px;
+  padding: 35px 30px;
+  background-color: hsl(300, 43%, 22%);
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+.review-wrapper q {
+  line-height: 20px;
+  color: hsl(300, 24%, 96%);
+}
+
+.customer-info {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 25px;
+}
+.customer-info img {
+  width: 40px;
+  border-radius: 50%;
+}
+.customer-info p {
+  color: hsl(300, 24%, 96%);
+  font-weight: 500;
+}
+.customer-info p span {
+  color: hsl(333, 80%, 67%);
+  font-weight: 400;
+}
+
+@media only screen and (min-width: 1440px) {
+  body {
+    padding: 108px 0;
+    background-image: url("images/bg-pattern-top-desktop.svg"), url("images/bg-pattern-bottom-desktop.svg");
+    background-position: top left, bottom right;
+    background-repeat: no-repeat, no-repeat;
+    background-size: contain, contain;
+    background-size: 40%, 75%;
+  }
+  header {
+    flex-direction: row;
+    width: 75%;
+    gap: 50px;
+  }
+  header .intro-info {
+    flex: 1;
+    margin-right: 200px;
+    text-align: left;
+    align-self: baseline;
+  }
+  header .review-container {
+    flex: 1;
+    width: 50%;
+  }
+  .reviews {
+    margin-right: 55px;
+  }
+  .report-guru {
+    margin-left: 55px;
+  }
+  .best-tech {
+    margin-left: 110px;
+  }
+  .review-container {
+    flex-direction: row;
+    gap: 35px;
+    margin-top: 0;
+  }
+  .review-container .review-wrapper {
+    width: 335px;
+  }
+  .review-container .irene {
+    margin-top: 35px;
+  }
+  .review-container .anne {
+    margin-top: 70px;
+  }
+}/*# sourceMappingURL=style.css.map */

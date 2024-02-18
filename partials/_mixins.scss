@@ -1,0 +1,29 @@
+@mixin heading1 {
+  font-size: 40px;
+  color: $primary_very_dark_magenta;
+  margin-bottom: 20px;
+}
+
+@mixin rating_container {
+  text-align: center;
+  width: 315px;
+  padding: 15px 0 15px 0;
+  background-color: $neutral_Light_grayish_magenta;
+  border-radius: 10px;
+  color: $primary_very_dark_magenta;
+  font-weight: 700;
+  margin-bottom: 20px;
+
+  @media only screen and (min-width: 1440px) {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 25px;
+    padding-left: 25px;
+    width: 400px;
+
+    p {
+      margin-top: 0;
+    }
+  }
+}
